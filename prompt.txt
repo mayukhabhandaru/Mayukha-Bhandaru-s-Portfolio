@@ -1,0 +1,13 @@
+Initialize a modern, responsive HTML5 portfolio website for my ISM (Independent Study Mentorship) program inside this folder. Create a clean multi-page structure or a smooth single-page tabbed layout with index.html, css/styles.css, and js/main.js. 
+
+Please build out the following specific sections with clean placeholder assets and typography:
+1. HOME: Navigation bar, brand logo placeholder, my name, my topic of study, and an inspirational quote.
+2. ABOUT ME: A professional headshot placeholder, brief bio, my personal mission statement, and contact information.
+3. RÉSUMÉ: A clean layout ready for a future résumé, including visible placeholder download links for a PDF or Google Doc.
+4. ABOUT ISM: A section describing the Independent Study Mentorship program.
+5. MENTOR BIO: A dedicated section for a mentor bio and picture placeholder (marked as coming soon for ISM 2).
+6. RESEARCH: Categorized sections/cards with icons for assessments: Research, Interviews, Mentor Visits, and Observations.
+7. BLOG: A reverse-chronological blog feed layout (newest to oldest) ready for weekly entries.
+8. PROJECTS: Two distinct subsections for "Original Work" and "Final Product".
+
+Please generate all necessary files and folders now.

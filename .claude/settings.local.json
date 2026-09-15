@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(git init:*)",
+      "Bash(.gitignore << 'EOF'\n.DS_Store\n*.log\nnode_modules/\n.env\nEOF)",
+      "Bash(cat:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
