@@ -232,6 +232,26 @@ body {
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
 
+.hero-quote-simple {
+    margin: 2.5rem auto;
+    max-width: 700px;
+    animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+.hero-quote-simple p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.hero-quote-simple cite {
+    font-size: 1rem;
+    opacity: 0.85;
+    font-style: normal;
+}
+
 .quote-icon {
     font-size: 2rem;
     color: var(--accent-color);

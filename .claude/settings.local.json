@@ -6,7 +6,12 @@
       "Bash(.gitignore << 'EOF'\n.DS_Store\n*.log\nnode_modules/\n.env\nEOF)",
       "Bash(cat:*)",
       "Bash(git config:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(open:*)"
     ]
   }
 }
