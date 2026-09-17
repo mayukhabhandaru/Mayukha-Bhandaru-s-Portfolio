@@ -252,6 +252,43 @@ body {
     font-style: normal;
 }
 
+.hero-image-container {
+    margin: 3rem auto;
+    animation: fadeInUp 0.8s ease 0.5s backwards;
+}
+
+.hero-image-placeholder {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background: rgba(245, 230, 211, 0.15);
+    border: 3px dashed var(--accent-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.hero-image-placeholder:hover {
+    background: rgba(245, 230, 211, 0.25);
+    transform: translateY(-5px);
+}
+
+.hero-image-placeholder i {
+    font-size: 5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.hero-image-placeholder span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .quote-icon {
     font-size: 2rem;
     color: var(--accent-color);
