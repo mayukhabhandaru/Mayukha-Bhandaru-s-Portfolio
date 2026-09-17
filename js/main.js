@@ -76,36 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
 // INTERACTIVE ELEMENTS
 // ===========================
 
-// Add click handlers for research cards
+// Research cards - View Research button now links to research-assessments.html
+// Other view buttons still show coming soon alerts
 document.querySelectorAll('.view-btn').forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.preventDefault();
-        const cardTitle = this.closest('.research-card').querySelector('h3').textContent;
-        alert(`${cardTitle} section will be available with future content updates.`);
-    });
+    // Skip if it's a link (already has href), only add handler to buttons
+    if (button.tagName === 'BUTTON') {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const cardTitle = this.closest('.research-card').querySelector('h3').textContent;
+            alert(`${cardTitle} section will be available with future content updates.`);
+        });
+    }
 });
 
-// Add click handlers for blog "Read More" toggle
-document.querySelectorAll('.read-more-toggle').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const blogEntry = this.closest('.blog-entry');
-        const excerpt = blogEntry.querySelector('.blog-excerpt');
-        const fullContent = blogEntry.querySelector('.blog-full-content');
-
-        if (fullContent.style.display === 'none') {
-            // Show full content
-            excerpt.style.display = 'none';
-            fullContent.style.display = 'block';
-            this.innerHTML = 'Show Less <i class="fas fa-arrow-up"></i>';
-        } else {
-            // Show excerpt
-            excerpt.style.display = 'block';
-            fullContent.style.display = 'none';
-            this.innerHTML = 'Read Full Entry <i class="fas fa-arrow-right"></i>';
-        }
-    });
-});
+// Blog entries now use separate pages (blog-1.html, blog-2.html, etc.)
 
 // Add click handlers for project links
 document.querySelectorAll('.project-link').forEach(link => {
