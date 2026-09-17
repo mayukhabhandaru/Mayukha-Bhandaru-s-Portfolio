@@ -625,6 +625,26 @@ body {
     text-align: center;
 }
 
+.ism-text-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.ism-text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.ism-text-content p:last-child {
+    margin-bottom: 0;
+}
+
 .lead {
     font-size: 1.25rem;
     color: var(--text-light);
