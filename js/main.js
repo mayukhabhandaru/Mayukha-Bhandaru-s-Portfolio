@@ -85,11 +85,25 @@ document.querySelectorAll('.view-btn').forEach(button => {
     });
 });
 
-// Add click handlers for blog "Read More" links
-document.querySelectorAll('.read-more').forEach(link => {
+// Add click handlers for blog "Read More" toggle
+document.querySelectorAll('.read-more-toggle').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
-        alert('Individual blog post pages will be available soon!');
+        const blogEntry = this.closest('.blog-entry');
+        const excerpt = blogEntry.querySelector('.blog-excerpt');
+        const fullContent = blogEntry.querySelector('.blog-full-content');
+
+        if (fullContent.style.display === 'none') {
+            // Show full content
+            excerpt.style.display = 'none';
+            fullContent.style.display = 'block';
+            this.innerHTML = 'Show Less <i class="fas fa-arrow-up"></i>';
+        } else {
+            // Show excerpt
+            excerpt.style.display = 'block';
+            fullContent.style.display = 'none';
+            this.innerHTML = 'Read Full Entry <i class="fas fa-arrow-right"></i>';
+        }
     });
 });
 
