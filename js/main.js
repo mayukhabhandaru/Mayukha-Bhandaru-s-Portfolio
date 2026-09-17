@@ -109,13 +109,7 @@ if (finalProductBtn) {
     });
 }
 
-// Add click handlers for resume download buttons
-document.querySelectorAll('.download-btn').forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.preventDefault();
-        alert('Résumé downloads will be available soon. Please check back later!');
-    });
-});
+// Resume download buttons - removed alert handlers to allow downloads
 
 // ===========================
 // PAGE TRANSITIONS
