@@ -1570,7 +1570,7 @@ body {
 /* ===========================
    RESPONSIVE DESIGN
    =========================== */
-@media (max-width: 968px) {
+@media (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1592,12 +1592,6 @@ body {
         display: flex;
     }
 
-    .hero-split {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
-
     .hero-text {
         text-align: center;
     }
@@ -1606,7 +1600,7 @@ body {
         font-size: 3rem;
     }
 
-    .hero-image-placeholder {
+    .hero-image {
         height: 250px;
     }
 
