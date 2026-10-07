@@ -404,6 +404,15 @@ body {
     justify-content: center;
 }
 
+.headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    box-shadow: var(--shadow-lg);
+}
+
 .headshot-placeholder {
     width: 250px;
     height: 250px;
